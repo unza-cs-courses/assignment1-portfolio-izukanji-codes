@@ -3,62 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description" content="Professional portfolio website for Izukanji Rhoda Nachalwe">
+    <title>Portfolio - Izukanji Rhoda Nachalwe</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!--
-    ============================================================
-    ASSIGNMENT 1: RESPONSIVE PORTFOLIO WEBSITE
-    CSC4035 Web Programming and Technologies
-
-    Instructions:
-    1. Complete all TODO sections below
-    2. Use semantic HTML5 elements
-    3. Ensure all images have alt attributes
-    4. Ensure all form inputs have labels
-    5. Test responsiveness at multiple breakpoints
-    ============================================================
-    -->
 
     <!-- Navigation -->
     <header class="header">
-        <nav class="nav">
-            <!-- TODO: Create navigation with links to each section
-                 Requirements:
-                 - Logo/site title
-                 - Navigation links (Home, About, Projects, Contact)
-                 - Mobile-friendly (hamburger menu optional)
-                 - Active state indication
-            -->
+        <nav class="nav container" aria-label="Main Navigation">
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+                <a href="#home">Izukanji Rhoda Nachalwe</a>
             </div>
+
+            <!-- CSS Hamburger Toggle -->
+            
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="nav__hamburger" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <!-- Navigation Menu -->
             <ul class="nav__menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <!-- Dark Mode Toggle -->
+            <div class="nav__dark-mode">
+                <label for="dark-mode-toggle" class="switch" aria-label="Toggle Dark Mode">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <!-- TODO: Create hero section
-                 Requirements:
-                 - Your name (h1)
-                 - Professional tagline
-                 - Call-to-action button
-                 - Consider using Flexbox for layout
-            -->
-            <div class="hero__content">
-                <h1>Your Name</h1>
+            <div class="hero__content container">
+                <h1>Izukanji Rhoda Nachalwe</h1>
                 <p class="hero__tagline">
-                    <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
+                    Computer Science Student | Software Developer | Problem Solver
                 </p>
                 <a href="#contact" class="btn btn--primary">Get In Touch</a>
             </div>
@@ -66,42 +57,30 @@
 
         <!-- About Section -->
         <section id="about" class="about">
-            <!-- TODO: Create about section
-                 Requirements:
-                 - Section heading (h2)
-                 - Profile image with alt text
-                 - Professional bio (150+ words)
-                 - Skills list
-                 - Use CSS Grid or Flexbox for layout
-            -->
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about__content">
                     <div class="about__image">
-                        <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                        <img src="images/profile-placeholder.jpg" alt="Profile photo of Izukanji">
                     </div>
                     <div class="about__text">
                         <p>
-                            <!-- TODO: Write your professional bio (150+ words)
-                                 Include:
-                                 - Your background
-                                 - Your interests in web development
-                                 - Your goals
-                                 - What makes you unique
-                            -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                            I am a final year Computer Science student majoring in Software Engineering at the University of Zambia. I have a passion for software engineering and web development. 
+                            Throughout my academic journey, I have developed a strong foundation in programming languages such as Java, Python, and JavaScript, and I have gained hands-on experience with various frameworks and tools. 
+                            My interest in web development stems from my desire to create intuitive and engaging user experiences that can make a positive impact on people's lives.
                         </p>
                         <h3>Skills</h3>
                         <ul class="skills-list">
-                            <!-- TODO: Add your skills -->
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>JavaScript</li>
                             <li>Responsive Design</li>
-                            <!-- Add more skills -->
+                            <li>Git & GitHub</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>Basic Data Analysis</li>
+                            <li>Team Collaboration</li>
                         </ul>
                     </div>
                 </div>
@@ -110,25 +89,17 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects">
-            <!-- TODO: Create projects section
-                 Requirements:
-                 - Section heading (h2)
-                 - Minimum 3 project cards
-                 - Each card: image, title, description, link(s)
-                 - Use CSS Grid for card layout
-            -->
             <div class="container">
                 <h2>My Projects</h2>
                 <div class="projects__grid">
                     <!-- Project Card 1 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
+                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Library Database Management System">
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
+                            <h3>Library Database Management System</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A full-stack application with database integration and GUI. It is built using Java, Java Swing and MySQL. 
+                                The system implements CRUD operations and secure user management to efficiently manage library resources and user interactions.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -139,13 +110,12 @@
 
                     <!-- Project Card 2 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <img src="images/project2-placeholder.jpg" alt="Screenshot of React Movie App">
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
+                            <h3>React Movie App</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A responsive movie application built with React, Vite and TMDB API. It showcases TypeScript fundamentals and DOM techniques.
+                                It allows users to browse and search for popular movies, view details, and manage a watchlist.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -156,13 +126,12 @@
 
                     <!-- Project Card 3 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                        <img src="images/project4-placeholder.jpg" alt="Screenshot of Responsive Portfolio Website">
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
+                            <h3>Responsive Portfolio Website</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A responsive portfolio website built with HTML, CSS, and JavaScript. It showcases my skills and projects in a modern, visually appealing layout.
+                                The site is fully responsive and provides an optimal viewing experience across different devices.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -170,25 +139,12 @@
                             </div>
                         </div>
                     </article>
-
-                    <!-- TODO: Add more project cards if desired -->
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
-            <!-- TODO: Create contact section
-                 Requirements:
-                 - Section heading (h2)
-                 - Contact form with:
-                   - Name field (required)
-                   - Email field (required, type="email")
-                   - Message textarea (required)
-                   - Submit button
-                 - All inputs must have associated labels
-                 - Use HTML5 validation attributes
-            -->
             <div class="container">
                 <h2>Contact Me</h2>
                 <form class="contact__form" action="#" method="POST">
@@ -241,16 +197,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <!-- TODO: Create footer
-             Requirements:
-             - Copyright notice
-             - Social media links (optional)
-             - Back to top link (optional)
-        -->
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2026 Izukanji Rhoda Nachalwe. All rights reserved.</p>
             <nav class="footer__social">
-                <!-- TODO: Add your social media links -->
                 <a href="#" aria-label="GitHub">GitHub</a>
                 <a href="#" aria-label="LinkedIn">LinkedIn</a>
                 <a href="#" aria-label="Twitter">Twitter</a>
